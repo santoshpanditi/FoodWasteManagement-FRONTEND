@@ -1,0 +1,96 @@
+.dashboard {
+  min-height: 100vh;
+  background: linear-gradient(to right, #5f9cff, #7a5fff);
+  padding: 30px;
+}
+
+/* TOP BOX */
+.top-box {
+  background: #e9eef5;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: #e9eef5;
+  padding: 30px;
+  border-radius: 20px;
+  width: 23%;
+  text-align: center;
+}
+/* LISTINGS SECTION */
+.listings-box {
+  background: #e9eef5;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.listings-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.listing-card {
+  background: #f4f6fb;
+  padding: 25px;
+  border-radius: 10px;
+  width: 48%;
+}
+
+.listing-card h3 {
+  color: #5f9cff;
+  font-size: 24px;
+}
+
+.admin-table-box {
+  background: #e9eef5;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 40px;
+}
+
+.admin-table-wrap {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #dde4ef;
+}
+
+.admin-table th {
+  background: #f4f6fb;
+  color: #2b3d63;
+  font-weight: 700;
+}
+
+.admin-table tr:hover {
+  background: #f8fbff;
+}
+
+.admin-table td {
+  color: #4b5f82;
+}

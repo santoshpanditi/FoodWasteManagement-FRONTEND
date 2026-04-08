@@ -1,0 +1,112 @@
+/* OUTER BACKGROUND */
+.outer {
+  min-height: 100vh;
+  background: linear-gradient(to right, #5f9cff, #7a5fff);
+  display: flex;
+  justify-content: center;
+}
+
+/* CENTER GREY PANEL */
+.inner {
+  width: 65%;
+  background: #e9eef5;
+  padding: 40px 20px 60px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* TITLE */
+.inner h1 {
+  color: #6c7cff;
+  margin-bottom: 5px;
+}
+
+/* SUBTEXT */
+.inner p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* FORM CARD */
+.card {
+  background: #f5f5f5;
+  padding: 25px;
+  width: 420px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* LABEL */
+.card label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* INPUTS */
+.card input,
+.card textarea,
+.card select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  background: #2f2f2f;
+  color: white;
+}
+
+/* PLACEHOLDER */
+.card input::placeholder,
+.card textarea::placeholder {
+  color: #bbb;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  gap: 12px;
+  align-items: end;
+}
+
+/* SMALL QUANTITY */
+.small {
+  width: 120px;   /* 🔥 control size here */
+  flex: none;     /* important: stop stretching */
+}
+
+/* OTHER FIELDS */
+.row div {
+  flex: 1;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* PRIMARY BUTTON */
+.primary {
+  background: linear-gradient(to right, #5f9cff, #7a5fff);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* CANCEL BUTTON */
+.cancel {
+  background: #e0e0e0;
+  color: #333;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

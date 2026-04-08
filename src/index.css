@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.dashboard .top-box h1,
+.impact-header h2,
+.deliveries-header h1,
+.users-header h1,
+.moderation-header h1,
+.reports-header h1,
+.my-claims-hero h1,
+.browse-food-hero h1,
+.list-food-hero h1,
+.my-listings-hero h1 {
+  font-size: 2.6rem;
+  color: #5b6cff;
+  font-weight: 700;
+  margin: 0;
+}
+
+.dashboard .top-box p,
+.impact-header p,
+.deliveries-header p,
+.users-header p,
+.moderation-header p,
+.reports-header p,
+.my-claims-hero p,
+.browse-food-hero p,
+.list-food-hero p,
+.my-listings-hero p {
+  color: #6d7db5;
+  font-size: 1rem;
+  margin: 10px 0 0;
+}
+
+.dashboard .top-box,
+.impact-header,
+.deliveries-header,
+.users-header,
+.moderation-header,
+.reports-header,
+.my-claims-hero,
+.browse-food-hero,
+.list-food-hero,
+.my-listings-hero {
+  text-align: center;
+}

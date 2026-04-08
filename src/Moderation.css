@@ -1,0 +1,170 @@
+.moderation-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6b7eff 0%, #8c5dff 100%);
+  padding: 30px;
+}
+
+.moderation-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 28px;
+  box-shadow: 0 18px 60px rgba(20, 44, 108, 0.14);
+  padding: 32px;
+}
+
+.moderation-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.moderation-header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  color: #30427a;
+}
+
+.moderation-header p {
+  margin: 12px auto 0;
+  color: #6b7aa5;
+  max-width: 760px;
+  font-size: 1rem;
+}
+
+.moderation-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.mod-card {
+  background: #ffffff;
+  padding: 26px 20px;
+  border-radius: 22px;
+  box-shadow: 0 16px 36px rgba(20, 44, 108, 0.08);
+  text-align: center;
+}
+
+.mod-number {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #3d4b8c;
+}
+
+.mod-label {
+  margin-top: 12px;
+  color: #6b7aa5;
+  font-size: 0.95rem;
+}
+
+.empty-moderation {
+  padding: 48px 0;
+  text-align: center;
+  color: #5f6f96;
+  font-size: 1.1rem;
+}
+
+.moderation-list {
+  display: grid;
+  gap: 20px;
+}
+
+.moderation-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 50px rgba(20, 44, 108, 0.1);
+}
+
+.moderation-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.moderation-card-top h3 {
+  margin: 0;
+  color: #25355f;
+}
+
+.moderation-card-top span {
+  background: #eef3ff;
+  color: #4b6aa6;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.moderation-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.moderation-info div {
+  color: #55688f;
+  font-size: 0.95rem;
+}
+
+.moderation-info strong {
+  color: #2b3f6e;
+}
+
+.moderation-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.approve-button,
+.reject-button {
+  flex: 1;
+  min-width: 140px;
+  border: none;
+  padding: 14px 18px;
+  font-size: 0.95rem;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.approve-button {
+  background: #3ea1ff;
+  color: #ffffff;
+}
+
+.reject-button {
+  background: #ff5b6b;
+  color: #ffffff;
+}
+
+.approve-button:hover,
+.reject-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(20, 44, 108, 0.14);
+}
+
+@media (max-width: 900px) {
+  .moderation-cards,
+  .moderation-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .moderation-container {
+    padding: 24px;
+  }
+
+  .moderation-card {
+    padding: 20px;
+  }
+
+  .moderation-info {
+    gap: 12px;
+  }
+}

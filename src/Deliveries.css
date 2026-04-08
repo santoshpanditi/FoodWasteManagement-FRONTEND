@@ -1,0 +1,265 @@
+.deliveries-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6b7eff 0%, #8c5dff 100%);
+  padding: 30px;
+}
+
+.deliveries-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 28px;
+  box-shadow: 0 18px 60px rgba(20, 44, 108, 0.14);
+  padding: 32px;
+}
+
+.deliveries-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.deliveries-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #30427a;
+}
+
+.deliveries-header p {
+  margin: 12px auto 0;
+  color: #6b7aa5;
+  max-width: 760px;
+  font-size: 1rem;
+}
+
+.delivery-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.delivery-stat-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 24px 20px;
+  box-shadow: 0 16px 40px rgba(20, 44, 108, 0.08);
+  text-align: center;
+}
+
+.delivery-stat-card span {
+  display: block;
+  color: #7b86ab;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.delivery-stat-card strong {
+  font-size: 2.3rem;
+  color: #24335f;
+}
+
+.delivery-list {
+  display: grid;
+  gap: 20px;
+}
+
+.delivery-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 50px rgba(20, 44, 108, 0.1);
+}
+
+.delivery-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.delivery-card-head h2 {
+  margin: 0;
+  color: #24335f;
+  font-size: 1.4rem;
+}
+
+.delivery-badge {
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.delivery-badge.scheduled {
+  background: #ffd472;
+  color: #5b4900;
+}
+
+.delivery-badge.approved {
+  background: #c0e5ff;
+  color: #2166a5;
+}
+
+.delivery-badge.pending {
+  background: #ffe9c0;
+  color: #a36800;
+}
+
+.delivery-badge.completed {
+  background: #d2ffe0;
+  color: #206d34;
+}
+
+.delivery-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.delivery-details div {
+  color: #4f6187;
+  line-height: 1.65;
+}
+
+.delivery-details span {
+  display: block;
+  color: #7b86ab;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.delivery-details strong {
+  font-size: 1rem;
+  color: #24335f;
+}
+
+.delivery-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.delivery-action-button {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  min-width: 170px;
+  transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.delivery-action-button:hover {
+  transform: translateY(-2px);
+}
+
+.delivery-action-button.in-transit {
+  background: linear-gradient(135deg, #4e5eff 0%, #6a3dff 100%);
+}
+
+.delivery-action-button.delivered {
+  background: linear-gradient(135deg, #4ec77f 0%, #38a952 100%);
+}
+
+.delivery-card {
+  background: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 50px rgba(20, 44, 108, 0.1);
+}
+
+.delivery-card:hover {
+  border-color: rgba(76, 83, 218, 0.18);
+}
+
+.delivery-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.delivery-card-head h2 {
+  margin: 0;
+  color: #24335f;
+  font-size: 1.4rem;
+}
+
+.delivery-badge {
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.delivery-badge.scheduled {
+  background: #ffb500;
+  color: #5b3c00;
+}
+
+.delivery-badge.in-transit {
+  background: #6e5bff;
+  color: #ffffff;
+}
+
+.delivery-badge.completed {
+  background: #38b65c;
+  color: #ffffff;
+}
+
+.delivery-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.delivery-details div {
+  color: #4f6187;
+  line-height: 1.65;
+}
+
+.delivery-details span {
+  display: block;
+  color: #7b86ab;
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.delivery-details strong {
+  font-size: 1rem;
+  color: #24335f;
+}
+
+.delivery-empty {
+  padding: 40px 0;
+  text-align: center;
+  color: #5f6f96;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 960px) {
+  .delivery-stats {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+
+  .delivery-details {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .deliveries-container {
+    padding: 22px;
+  }
+
+  .delivery-card {
+    padding: 20px;
+  }
+}

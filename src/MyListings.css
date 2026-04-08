@@ -1,0 +1,72 @@
+.outer {
+  min-height: 100vh;
+  background: linear-gradient(to right, #5f9cff, #7a5fff);
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  width: 75%;
+  background: #e9eef5;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th {
+  background: linear-gradient(to right, #5f9cff, #7a5fff);
+  color: white;
+  padding: 12px;
+}
+
+.table td {
+  background: white;
+  padding: 12px;
+}
+
+.status {
+  background: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.view {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.delete {
+  background: red;
+  color: white;
+  padding: 5px 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 300px;
+}

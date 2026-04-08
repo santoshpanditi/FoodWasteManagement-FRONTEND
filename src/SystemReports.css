@@ -1,0 +1,142 @@
+.reports-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6b7eff 0%, #8c5dff 100%);
+  padding: 30px;
+}
+
+.reports-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 28px;
+  box-shadow: 0 18px 60px rgba(20, 44, 108, 0.14);
+}
+
+.reports-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.reports-header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  color: #3d4b8c;
+}
+
+.reports-header p {
+  margin: 12px auto 0;
+  color: #6d7aa5;
+  max-width: 760px;
+  font-size: 1rem;
+}
+
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.report-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 24px 22px;
+  box-shadow: 0 16px 40px rgba(20, 44, 108, 0.08);
+}
+
+.report-card h3 {
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+  color: #8a92b6;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.report-value {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #24335f;
+  margin-bottom: 8px;
+}
+
+.report-label {
+  color: #6b7aa5;
+  font-size: 0.95rem;
+}
+
+.breakdown-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.breakdown-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 26px;
+  box-shadow: 0 16px 40px rgba(20, 44, 108, 0.08);
+}
+
+.breakdown-card h3 {
+  margin: 0 0 18px;
+  font-size: 1.1rem;
+  color: #24335f;
+}
+
+.breakdown-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.breakdown-table th,
+.breakdown-table td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #e8edf8;
+  color: #56668f;
+}
+
+.breakdown-table th {
+  color: #7582aa;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.breakdown-table td {
+  font-size: 0.95rem;
+}
+
+.breakdown-table .status-label {
+  color: #3d4b8c;
+  font-weight: 600;
+}
+
+.breakdown-row .breakdown-card:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.breakdown-note {
+  margin-top: 20px;
+  color: #6b7aa5;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .reports-grid,
+  .breakdown-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .reports-container {
+    padding: 22px;
+  }
+
+  .report-card,
+  .breakdown-card {
+    padding: 20px;
+  }
+}

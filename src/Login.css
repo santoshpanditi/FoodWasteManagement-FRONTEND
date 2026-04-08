@@ -1,0 +1,117 @@
+﻿body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  background: #eef0ff;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.35), transparent 26%),
+    linear-gradient(135deg, #5f9cff 0%, #7b5cff 100%);
+}
+
+.login-card {
+  width: 380px;
+  max-width: 100%;
+  padding: 40px 36px;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 28px 70px rgba(29, 36, 98, 0.16);
+}
+
+.login-top h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.1;
+  color: #4e5cff;
+  text-align: center;
+}
+
+.login-top p {
+  margin: 14px auto 0;
+  color: #6f7396;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.login-top h2 {
+  margin: 28px 0 0;
+  font-size: 16px;
+  letter-spacing: 0.12em;
+  color: #252834;
+  text-align: center;
+}
+
+.login-form {
+  margin-top: 26px;
+}
+
+.login-form label {
+  display: block;
+  margin: 18px 0 8px;
+  color: #6f7396;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+}
+
+.login-form input,
+.login-form select {
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 16px;
+  background: #22232f;
+  color: #f6f7ff;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.login-form input::placeholder {
+  color: #9fa3c1;
+}
+
+.login-form button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #5f9cff 0%, #7b5cff 100%);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.login-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 38px rgba(95, 156, 255, 0.24);
+}
+
+.login-footer {
+  margin-top: 18px;
+  text-align: center;
+  color: #7f84ac;
+  font-size: 13px;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #5f9cff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
