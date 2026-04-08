@@ -6,7 +6,6 @@ function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("Food Donor");
-  const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -19,7 +18,7 @@ function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
     if (!email || !password) {
-      setErrorMessage("Please enter both email and password.");
+      alert("Please enter both email and password.");
       return;
     }
 
@@ -59,7 +58,6 @@ function Login() {
     localStorage.setItem("currentUser", JSON.stringify(profile));
     localStorage.setItem("userEmail", normalizedEmail);
     localStorage.setItem("userRole", profile.role);
-    setErrorMessage("");
 
     navigate("/dashboard", { replace: true });
   };

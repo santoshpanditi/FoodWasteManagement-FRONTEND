@@ -3,15 +3,9 @@ import Navbar from "./Navbar";
 import "./Moderation.css";
 
 function Moderation() {
-  const [foods, setFoods] = useState([]);
   const [claims, setClaims] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/foods")
-      .then((res) => res.json())
-      .then((data) => setFoods(data))
-      .catch((err) => console.error(err));
-
     const storedClaims = JSON.parse(localStorage.getItem("myClaims") || "[]");
     setClaims(storedClaims);
   }, []);
