@@ -18,7 +18,7 @@ function ListFood() {
     e.preventDefault();
 
     try {
-      await fetch("http://localhost:8080/addFood", {
+      await fetch("https://foodwastemanagement-backend-production-404d.up.railway.app/api/foods", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

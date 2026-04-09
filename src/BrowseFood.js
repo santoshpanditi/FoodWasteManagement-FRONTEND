@@ -103,7 +103,7 @@ function BrowseFood() {
     const storedAdjustments = JSON.parse(localStorage.getItem("foodAdjustments") || "{}");
     setFoodAdjustments(storedAdjustments);
 
-    fetch("http://localhost:8080/foods")
+    fetch("https://foodwastemanagement-backend-production-404d.up.railway.app/api/foods")
       .then((res) => res.json())
       .then((data) => {
         const adjustedFoods = data
