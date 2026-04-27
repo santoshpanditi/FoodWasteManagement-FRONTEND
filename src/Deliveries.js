@@ -8,7 +8,7 @@ function Deliveries() {
   const [deliveryStatus, setDeliveryStatus] = useState({});
 
   useEffect(() => {
-    fetch("https://foodwastemanagement-backend-production-404d.up.railway.app/api/foods")
+    fetch("https://foodwastemanagement-backend.onrender.com/api/foods")
       .then((res) => res.json())
       .then((data) => setFoods(data))
       .catch((err) => console.error(err));
