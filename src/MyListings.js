@@ -11,7 +11,7 @@ function MyListings() {
   }, []);
 
   const fetchFoods = async () => {
-    const res = await fetch("https://foodwastemanagement-backend-production-404d.up.railway.app/api/foods");
+    const res = await fetch("https://foodwastemanagement-backend.onrender.com/api/foods");
     const data = await res.json();
     setFoods(data);
   };
@@ -20,7 +20,7 @@ function MyListings() {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure to delete?")) return;
 
-    await fetch(`https://foodwastemanagement-backend-production-404d.up.railway.app/api/foods/${id}`, {
+    await fetch(`https://foodwastemanagement-backend.onrender.com/api/foods/${id}`, {
       method: "DELETE",
     });
 
